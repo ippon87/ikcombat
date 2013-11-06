@@ -1,34 +1,43 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-<script type="text/javascript" src="file:///C:/Users/Notandi/Documents/Forrit/ikcombat/NPC.js"></script>
-<script type="text/javascript" src="file:///C:/Users/Notandi/Documents/Forrit/ikcombat/combatFunctions.js"></script>
-<script type="text/javascript" src="file:///C:/Users/Notandi/Documents/Forrit/ikcombat/PC.js"></script>
+<header>
+<meta charset="utf-8">
+<title>IKRPG DM-Tool</title>
+<link rel="stylesheet" type="text/css" href = "RammaCSS.css">
+<script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="NPC.js"></script>
+<script type="text/javascript" src="combatFunctions.js"></script>
+<script type="text/javascript" src="PC.js"></script>
 <script type="text/javascript"> // local variables and functions
 var forbattle = new Array();
 var increment = 0; // increment fyrir battlelist
 var encounterpoints = 0;
 
 </script>
+</header>
 <body>
 
-<div id="container" style="width:600px; float:left">
+<section id="container" >
 
-<div id="header" style="background-color:#FFA500;">
+<div id="header" >
 <h1 style="margin-bottom:0;">IK-Combat DM Tool</h1></div>
 
-<div id="menu" style="background-color:Crimson;height:300px;width:100px;float:left;">
-<b>Menu</b><br>
-<b>NPC's</b><br>
-unnamed<br>
-champions</br>
-creatures<br>
-<b>PC's</b><br>
-players<br>
-named npc's<br>
-jacks<br>
-other</div>
+<section id="menu" >
+<dl>
+<dt><b>Menu</b><dt><br>
+<dt>NPC's</dt>
+<dd>unnamed</dd>
+<dd>champions</dd>
+<dd>creatures</dd>
+<dt>PC's</dt>
+<dd>players</dd>
+<dd>named npc's</dd>
+<dd>jacks</dd>
+<dd>other</dd>
+</dl>
+</section>
 
-<div id="content" style="background-color:#EEEEEE;height:300px;width:250px;float:left;">
+<div id="content" class="content" ">
 Generic NPC's<br>
 <select size="8" id="elements"> 
 			<option value="">--Humans--</option>
@@ -78,7 +87,7 @@ document.getElementById( 'myX' ).innerHTML = 'Encounter Points = '+encounterpoin
 </script>
 </div>
 
-<div id="content2" style="background-color:#EEEEEE;height:300px;width:250px;float:left;">
+<div id="content2" class="content">
 Named NPC's and PC's<br>
 <select size="8" id="elements2"> 
            <option value="SamsonTrygan">Samson Trygan</option>
@@ -101,10 +110,10 @@ Named NPC's and PC's<br>
 </div>
 
 
-</div>
-<div id="container" style="width:700px; float:right">
+</section>
+<section id="container2" >
 
-<div id="header" style="background-color:#FFA500;">
+<div id="header" >
 <h1 style="margin-bottom:0;">Combat Simulator</h1></div>
 <div style="float:right">
 <INPUT style="float:right" TYPE="Radio" Name="rollmod" id="normal" checked="true">Normal Roll</input><br>
@@ -224,7 +233,7 @@ Named NPC's and PC's<br>
 <button class="btn magic" id="btn-magic14" OnClick="magickAttack(14)"> magic </button></td>
 </tr>
 </table>
-</div>
+</section>
 <button class="btn roll" id="d6" OnClick="var roll=rolld3(); alert(roll)" function>roll d3<button>
 <button class="btn roll" id="d6" OnClick="var roll=rolld6(); alert(roll)" function>roll d6<button>
 <button class="btn roll" id="2d6" OnClick="var roll=roll2d6(); alert(roll)" function>roll 2d6<button>
