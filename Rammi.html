@@ -20,7 +20,7 @@ var encounterpoints = 0;
 <section id="container" >
 
 <div id="header" >
-<h1 style="margin-bottom:0;">IK-Combat DM Tool</h1></div>
+<h1>IK-Combat DM Tool</h1></div>
 
 <section id="menu" >
 <dl>
@@ -114,12 +114,12 @@ Named NPC's and PC's<br>
 <section id="container2" >
 
 <div id="header" >
-<h1 style="margin-bottom:0;">Combat Simulator</h1></div>
-<div style="float:right">
-<INPUT style="float:right" TYPE="Radio" Name="rollmod" id="normal" checked="true">Normal Roll</input><br>
-<INPUT style="float:right" TYPE="Radio" Name="rollmod" id="charge">Charge</input><br>
-<INPUT style="float:right" TYPE="Radio" Name="rollmod" id="mighty">Mighty</input><br>
-<INPUT style="float:right" TYPE="Radio" Name="rollmod" id="charge-mighty">Charge-Mighty</input>
+<h1>Combat Simulator</h1></div>
+<div class="rollmod" >
+<INPUT class="rollmod"  TYPE="Radio" Name="rollmod" id="normal" checked="true">Normal Roll</input><br>
+<INPUT class="rollmod"  TYPE="Radio" Name="rollmod" id="charge">Charge</input><br>
+<INPUT class="rollmod"  TYPE="Radio" Name="rollmod" id="mighty">Mighty</input><br>
+<INPUT	class="rollmod"  TYPE="Radio" Name="rollmod" id="charge-mighty">Charge-Mighty</input>
 </div>
 <table border="1"> 
 <tr>
@@ -137,93 +137,93 @@ Named NPC's and PC's<br>
 <tr>
 <td><button class="btn char" id="btn-char1" OnClick="statLine(1)" function > placeholder</button></td>
 <td><button class="btn status" id="btn-status1" OnClick="statusChange(1)" function> status placeholder </button></td>
-<td><button class="btn melee" id="btn-melee0" Onclick="meleeAttack(1)" function> melee </button>
-<button class="btn ranged" id="btn-ranged0" OnClick="rangedAttack(1)" function> ranged</button>
-<button class="btn magic" id="btn-magic0" OnClick="magickAttack(1)"> magic </button></td>
+<td><button class="btn melee" id="btn-melee1" Onclick="meleeAttack(1)" function> melee </button>
+<button class="btn ranged" id="btn-ranged1" OnClick="rangedAttack(1)" function> ranged</button>
+<button class="btn magic" id="btn-magic1" OnClick="magickAttack(1)"> magic </button></td>
 </tr>
 <tr>
 <td><button class="btn char" id="btn-char2" OnClick="statLine(2)" function > placeholder</button></td>
 <td><button class="btn status" id="btn-status2" OnClick="statusChange(2)" function> status placeholder </button></td>
-<td><button class="btn melee" id="btn-melee0" Onclick="meleeAttack(2)" function> melee </button>
-<button class="btn ranged" id="btn-ranged0" OnClick="rangedAttack(2)" function> ranged</button>
-<button class="btn magic" id="btn-magic0" OnClick="magickAttack(2)"> magic </button></td>
+<td><button class="btn melee" id="btn-melee2" Onclick="meleeAttack(2)" function> melee </button>
+<button class="btn ranged" id="btn-ranged2" OnClick="rangedAttack(2)" function> ranged</button>
+<button class="btn magic" id="btn-magic2" OnClick="magickAttack(2)"> magic </button></td>
 </tr>
 <tr>
 <td><button class="btn char" id="btn-char3" OnClick="statLine(3)" function > placeholder</button></td>
 <td><button class="btn status" id="btn-status3" OnClick="statusChange(3)" function> status placeholder </button></td>
-<td><button class="btn melee" id="btn-melee0" Onclick="meleeAttack(3)" function> melee </button>
-<button class="btn ranged" id="btn-ranged0" OnClick="rangedAttack(3)" function> ranged</button>
-<button class="btn magic" id="btn-magic0" OnClick="magickAttack(3)"> magic </button></td>
+<td><button class="btn melee" id="btn-melee3" Onclick="meleeAttack(3)" function> melee </button>
+<button class="btn ranged" id="btn-ranged3" OnClick="rangedAttack(3)" function> ranged</button>
+<button class="btn magic" id="btn-magic3" OnClick="magickAttack(3)"> magic </button></td>
 </tr>
 <tr>
 <td><button class="btn char" id="btn-char4" OnClick="statLine(4)" function > placeholder</button></td>
 <td><button class="btn status" id="btn-status4" OnClick="statusChange(4)" function> status placeholder </button></td>
-<td><button class="btn melee" id="btn-melee0" Onclick="meleeAttack(4)" function> melee </button>
-<button class="btn ranged" id="btn-ranged0" OnClick="rangedAttack(4)" function> ranged</button>
-<button class="btn magic" id="btn-magic0" OnClick="magickAttack(4)"> magic </button></td>
+<td><button class="btn melee" id="btn-melee4" Onclick="meleeAttack(4)" function> melee </button>
+<button class="btn ranged" id="btn-ranged4" OnClick="rangedAttack(4)" function> ranged</button>
+<button class="btn magic" id="btn-magic4" OnClick="magickAttack(4)"> magic </button></td>
 </tr>
 <tr>
 <td><button class="btn char" id="btn-char5" OnClick="statLine(5)" function > placeholder</button></td>
 <td><button class="btn status" id="btn-status5" OnClick="statusChange(5)" function> status placeholder </button></td>
-<td><button class="btn melee" id="btn-melee0" Onclick="meleeAttack(5)" function> melee </button>
-<button class="btn ranged" id="btn-ranged0" OnClick="rangedAttack(5)" function> ranged</button>
-<button class="btn magic" id="btn-magic0" OnClick="magickAttack(5)"> magic </button></td>
+<td><button class="btn melee" id="btn-melee5" Onclick="meleeAttack(5)" function> melee </button>
+<button class="btn ranged" id="btn-ranged5" OnClick="rangedAttack(5)" function> ranged</button>
+<button class="btn magic" id="btn-magic5" OnClick="magickAttack(5)"> magic </button></td>
 </tr>
 <tr>
 <td><button class="btn char" id="btn-char6" OnClick="statLine(6)" function > placeholder</button></td>
 <td><button class="btn status" id="btn-status6" OnClick="statusChange(6)" function> status placeholder </button></td>
-<td><button class="btn melee" id="btn-melee0" Onclick="meleeAttack(6)" function> melee </button>
-<button class="btn ranged" id="btn-ranged0" OnClick="rangedAttack(6)" function> ranged</button>
-<button class="btn magic" id="btn-magic0" OnClick="magickAttack(6)"> magic </button></td>
+<td><button class="btn melee" id="btn-melee6" Onclick="meleeAttack(6)" function> melee </button>
+<button class="btn ranged" id="btn-ranged6" OnClick="rangedAttack(6)" function> ranged</button>
+<button class="btn magic" id="btn-magic6" OnClick="magickAttack(6)"> magic </button></td>
 </tr>
 <tr>
 <td><button class="btn char" id="btn-char7" OnClick="statLine(7)" function > placeholder</button></td>
 <td><button class="btn status" id="btn-status7" OnClick="statusChange(7)" function> status placeholder </button></td>
-<td><button class="btn melee" id="btn-melee0" Onclick="meleeAttack(7)" function> melee </button>
-<button class="btn ranged" id="btn-ranged0" OnClick="rangedAttack(7)" function> ranged</button>
-<button class="btn magic" id="btn-magic0" OnClick="magickAttack(7)"> magic </button></td>
+<td><button class="btn melee" id="btn-melee7" Onclick="meleeAttack(7)" function> melee </button>
+<button class="btn ranged" id="btn-ranged7" OnClick="rangedAttack(7)" function> ranged</button>
+<button class="btn magic" id="btn-magic7" OnClick="magickAttack(7)"> magic </button></td>
 </tr>
 <tr>
 <td><button class="btn char" id="btn-char8" OnClick="statLine(8)" function > placeholder</button></td>
 <td><button class="btn status" id="btn-status8" OnClick="statusChange(8)" function> status placeholder </button></td>
-<td><button class="btn melee" id="btn-melee0" Onclick="meleeAttack(8)" function> melee </button>
-<button class="btn ranged" id="btn-ranged0" OnClick="rangedAttack(8)" function> ranged</button>
-<button class="btn magic" id="btn-magic0" OnClick="magickAttack(8)"> magic </button></td>
+<td><button class="btn melee" id="btn-melee8" Onclick="meleeAttack(8)" function> melee </button>
+<button class="btn ranged" id="btn-ranged8" OnClick="rangedAttack(8)" function> ranged</button>
+<button class="btn magic" id="btn-magic8" OnClick="magickAttack(8)"> magic </button></td>
 </tr>
 <tr>
 <td><button class="btn char" id="btn-char9" OnClick="statLine(9)" function > placeholder</button></td>
 <td><button class="btn status" id="btn-status9" OnClick="statusChange(9)" function> status placeholder </button></td>
-<td><button class="btn melee" id="btn-melee0" Onclick="meleeAttack(9)" function> melee </button>
-<button class="btn ranged" id="btn-ranged0" OnClick="rangedAttack(9)" function> ranged</button>
-<button class="btn magic" id="btn-magic0" OnClick="magickAttack(9)"> magic </button></td>
+<td><button class="btn melee" id="btn-melee9" Onclick="meleeAttack(9)" function> melee </button>
+<button class="btn ranged" id="btn-ranged9" OnClick="rangedAttack(9)" function> ranged</button>
+<button class="btn magic" id="btn-magic9" OnClick="magickAttack(9)"> magic </button></td>
 </tr>
 <tr>
 <td><button class="btn char" id="btn-char10" OnClick="statLine(10)" function > placeholder</button></td>
 <td><button class="btn status" id="btn-status10" OnClick="statusChange(10)" function> status placeholder </button></td>
-<td><button class="btn melee" id="btn-melee0" Onclick="meleeAttack(10)" function> melee </button>
-<button class="btn ranged" id="btn-ranged0" OnClick="rangedAttack(10)" function> ranged</button>
-<button class="btn magic" id="btn-magic0" OnClick="magickAttack(10)"> magic </button></td>
+<td><button class="btn melee" id="btn-melee10" Onclick="meleeAttack(10)" function> melee </button>
+<button class="btn ranged" id="btn-ranged10" OnClick="rangedAttack(10)" function> ranged</button>
+<button class="btn magic" id="btn-magic10" OnClick="magickAttack(10)"> magic </button></td>
 </tr>
 <tr>
 <td><button class="btn char" id="btn-char11" OnClick="statLine(11)" function > placeholder</button></td>
 <td><button class="btn status" id="btn-status11" OnClick="statusChange(11)" function> status placeholder </button></td>
-<td><button class="btn melee" id="btn-melee0" Onclick="meleeAttack(11)" function> melee </button>
-<button class="btn ranged" id="btn-ranged0" OnClick="rangedAttack(11)" function> ranged</button>
-<button class="btn magic" id="btn-magic0" OnClick="magickAttack(11)"> magic </button></td>
+<td><button class="btn melee" id="btn-melee11" Onclick="meleeAttack(11)" function> melee </button>
+<button class="btn ranged" id="btn-ranged11" OnClick="rangedAttack(11)" function> ranged</button>
+<button class="btn magic" id="btn-magic11" OnClick="magickAttack(11)"> magic </button></td>
 </tr>
 <tr>
 <td><button class="btn char" id="btn-char12" OnClick="statLine(12)" function > placeholder</button></td>
 <td><button class="btn status" id="btn-status12" OnClick="statusChange(12)" function> status placeholder </button></td>
-<td><button class="btn melee" id="btn-melee0" Onclick="meleeAttack(12)" function> melee </button>
-<button class="btn ranged" id="btn-ranged0" OnClick="rangedAttack(12)" function> ranged</button>
-<button class="btn magic" id="btn-magic0" OnClick="magickAttack(12)"> magic </button></td>
+<td><button class="btn melee" id="btn-melee12" Onclick="meleeAttack(12)" function> melee </button>
+<button class="btn ranged" id="btn-ranged12" OnClick="rangedAttack(12)" function> ranged</button>
+<button class="btn magic" id="btn-magic12" OnClick="magickAttack(12)"> magic </button></td>
 </tr>
 <tr>
 <td><button class="btn char" id="btn-char13" OnClick="statLine(13)" function > placeholder</button></td>
 <td><button class="btn status" id="btn-status13" OnClick="statusChange(13)" function> status placeholder </button></td>
-<td><button class="btn melee" id="btn-melee0" Onclick="meleeAttack(13)" function> melee </button>
-<button class="btn ranged" id="btn-ranged0" OnClick="rangedAttack(13)" function> ranged</button>
-<button class="btn magic" id="btn-magic0" OnClick="magickAttack(13)"> magic </button></td>
+<td><button class="btn melee" id="btn-melee13" Onclick="meleeAttack(13)" function> melee </button>
+<button class="btn ranged" id="btn-ranged13" OnClick="rangedAttack(13)" function> ranged</button>
+<button class="btn magic" id="btn-magic13" OnClick="magickAttack(13)"> magic </button></td>
 </tr>
 <tr>
 <td><button class="btn char" id="btn-char14" OnClick="statLine(14)" function > placeholder</button></td>

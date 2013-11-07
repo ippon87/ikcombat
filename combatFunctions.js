@@ -1,3 +1,5 @@
+
+//adding characters and starting combat
 function newNPC()
 {
 	var x = document.getElementById("elements");
@@ -47,6 +49,8 @@ function startFunction()
 	}
 }
 
+
+//functions for rolling dice without modifiers
 function rolld3()
 {
 	var die = Math.floor((Math.random() * 3) +1);
@@ -89,7 +93,7 @@ function roll4d6()
 	else return [total, false];
 }
 
-
+//functions for attacks: melee, ranged and magic
 function meleeAttack(number)
 {
 	var mat = forbattle[number].mat;
@@ -107,6 +111,7 @@ function rangedAttack(number)
 	if(document.getElementById("normal").checked) normalRoll(rat, pow);
 }
 
+//this one is quite intricate due to the variable nature of magic attacks
 function magickAttack(number)
 {
 	var arcane = forbattle[number].arcane;
@@ -152,6 +157,7 @@ function magickAttack(number)
 	}
 }
 
+//below are functions for modifying damage rolls
 function normalRoll(hit, dmg)
 {
 var result = "";
@@ -252,6 +258,7 @@ function chargeMighty(hit, dmg)
 	alert(result);
 	}
 
+//this is a large alert functions for displaying stat line, TODO: make a character sheet appear in sepperate window
 function statLine(number)
 {
 	var statline = "";
@@ -281,7 +288,7 @@ function statLine(number)
 	}
 	alert(statline);
 }
-
+//any statuschange
 function statusChange(number)
 {
 	var npc = forbattle[number];
