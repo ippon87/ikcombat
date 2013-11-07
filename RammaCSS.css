@@ -1,0 +1,47 @@
+section#container
+{
+	width: 600px;
+	float:left;
+}
+
+section#container2
+{
+	width: 700px;
+	float: right;
+}
+
+#header
+{
+	background-color:#FFA500;
+}
+
+#menu
+{
+	background-color:Crimson;
+	height:300px;
+	width:100px;
+	float:left;
+}
+
+dd
+{
+	margin-left:20px;
+}
+
+.content
+{
+	background-color:#EEEEEE;
+	height:300px;
+	width:250px;
+	float:left;
+}
+
+.rollmod
+{
+	float: right;
+}
+
+h1
+{
+	margin-bottom: 0;
+}
